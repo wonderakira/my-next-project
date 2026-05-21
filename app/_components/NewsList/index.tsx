@@ -28,7 +28,7 @@ return (
     <ul>
         {news.map((article) => (
             <li key={article.id} className={styles.list}>
-                <Link href={'/news/${article.id}'} className={styles.link}>
+                <Link href={`/news/${article.id}`} className={styles.link}>
                     {/* <Image className={styles.image} src="/no-image.png" alt="No Image" width={1200} height={630} /> */}
                     { article.thumbnail ? (
                         <Image src={article.thumbnail.url} alt="" className={styles.image} width={article.thumbnail.width} height={article.thumbnail.height} />
